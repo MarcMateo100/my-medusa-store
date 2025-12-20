@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
 const { loadEnv, defineConfig } = require("@medusajs/framework/utils");
 
-// Carga variables de entorno
 loadEnv(process.env.NODE_ENV || "development", process.cwd());
 
 module.exports = defineConfig({
@@ -18,8 +17,12 @@ module.exports = defineConfig({
     },
   },
 
-  // 🔥 Desactiva el Admin UI para evitar el error en Render
+  // 🔥 Desactiva el admin UI en Medusa v2
   admin: {
-    disable: true,
+    serve: false,
   },
+
+  plugins: [
+    // No incluyas @medusajs/admin-bundler aquí
+  ],
 });
