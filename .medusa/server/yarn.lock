@@ -1330,23 +1330,6 @@
 "@js-sdsl/ordered-map@^4.4.2":
   version "4.4.2"
 
-"@medusajs/admin-bundler@2.12.1":
-  version "2.12.1"
-  dependencies:
-    "@medusajs/admin-shared" "2.12.1"
-    "@medusajs/admin-vite-plugin" "2.12.1"
-    "@medusajs/dashboard" "2.12.1"
-    "@vitejs/plugin-react" "^4.2.1"
-    autoprefixer "^10.4.19"
-    compression "^1.8.0"
-    express "^4.21.0"
-    get-port "^5.1.1"
-    glob "11.1.0"
-    outdent "^0.8.0"
-    postcss "^8.4.38"
-    tailwindcss "^3.4.3"
-    vite "^5.4.21"
-
 "@medusajs/admin-sdk@2.12.1":
   version "2.12.1"
   dependencies:
@@ -1627,7 +1610,6 @@
   dependencies:
     "@inquirer/checkbox" "^2.3.11"
     "@inquirer/input" "^2.2.9"
-    "@medusajs/admin-bundler" "2.12.1"
     "@medusajs/analytics" "2.12.1"
     "@medusajs/analytics-local" "2.12.1"
     "@medusajs/analytics-posthog" "2.12.1"
