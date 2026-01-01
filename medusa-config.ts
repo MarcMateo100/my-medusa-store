@@ -18,7 +18,5 @@ export default defineConfig({
     store: { auth: { disable: true, }, },
   },
 
-  admin: {
-    disable: false,
-  },
+
 })
