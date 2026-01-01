@@ -15,8 +15,7 @@ export default defineConfig({
       jwtSecret: process.env.JWT_SECRET || "supersecret",
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     },
-    store: { auth: { disable: true, }, },
-  },
 
+  },
 
 })
