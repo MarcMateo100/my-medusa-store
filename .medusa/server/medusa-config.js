@@ -3,6 +3,24 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
 const { loadEnv, defineConfig } = require("@medusajs/framework/utils");
 
+const modules = {
+  auth: {
+    resolve: "@medusajs/auth",
+    options: {
+      // Configuración de estrategias de autenticación
+    },
+  },
+};
+
+module.exports = {
+  projectConfig: {
+    database_url: process.env.DATABASE_URL,
+    database_type: "postgres",
+  },
+  modules,
+};
+
+
 console.log("🔥 CARGANDO CONFIG PERSONALIZADA");
 
 loadEnv(process.env.NODE_ENV || "development", process.cwd());
